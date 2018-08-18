@@ -1,0 +1,39 @@
+PONTEIRO
+Memória RAM é um sequência de bytes, numeradas sequen-
+cialmente. O número de um byte é o endereço (address)
+na memória.
+Um char ocupa 1 byte, 1 int ocupa 4 bytes e 1 float
+ocupa 4 bytes. O operador sizeof retorna o número de
+bytes de um tipo ou variável.
+
+O endereço de uma variável é dado pelo operador &.
+Se i é uma variável, então &i é o endereço do primeiro
+byte de i. Crie uma variável inteira i e exiba o con-
+teúdo e endereço na tela.
+
+Um ponteiro (pointer) é um tipo de variável para arma-
+zenar endereços de memória. Um ponteiro pode receber
+o valor NULL, que significa vazio, isto é, não aponta
+para nenhum endereço. NULL está e <stdlib.h>
+
+No jargão de programação, se p é um ponteiro que arma-
+zena o endereço de i, diz-se que "p aponta para i".
+
+Há vários tipos de ponteiros: int* p ou int *p,
+float *p, char *p, Ponto *p. O programa precisa saber
+o tipo do ponteiro.
+
+Também existe ponteiro para ponteiro.
+
+VETORES E ENDEREÇOS: vetores têm endereços consecutivos
+na memória. É possível alocar vetores usando ponteiros.
+
+int *vet;
+vet = (int*) malloc(100*sizeof(int));
+
+Nesse caso, vet aponta para o primeiro elemento;
+(vet+i) aponta para o i-ésimo elemento.
+
+vet[i]=87  equivale a *(vet+i)=87
+Escreva um pgm para gerar e exibir um vetor de inteiros
+usando ponteiros.  
